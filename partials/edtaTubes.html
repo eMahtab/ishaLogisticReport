@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+   <h3>EDTA Tubes</h3>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-offset-4 col-md-8 ">
+        <form name="datepickerForm" class="form-inline" role="form">
+          <div class="form-group">
+            <label class="control-label">
+              Select Date &nbsp; &nbsp;<i style="font-size: 35px" class="fa fa-calendar" aria-hidden="true"></i>
+            </label>
+          <input type="text" class="form-control" ng-model="edtaData.edtaDate" name="date" bs-datepicker>
+
+          </div>
+        </form>
+    </div>
+  </div>
+  <br/><br/>
+   <div class="row">
+     <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>EDTA Tube</th>
+              <th>Plasma 1</th>
+              <th>Plasma 2</th>
+              <th>Plasma 3</th>
+              <th>Plasma 4</th>
+              <th>Buffycoat 1</th>
+              <th>Buffycoat 2</th>
+              <th>RBC</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+           <tr ng-repeat="item in edtaData.data">
+             <td>{{item.edtaTube}}</td>
+             <td>{{item.plasma1}}</td>
+             <td>{{item.plasma2}}</td>
+             <td>{{item.plasma3}}</td>
+             <td>{{item.plasma4}}</td>
+             <td>{{item.buffycoat1}}</td>
+             <td>{{item.buffycoat2}}</td>
+             <td>{{item.rbc}}</td>
+             <td>{{item.date}}</td>
+           </tr>
+          </tbody>
+     </table>
+
+   </div>
+
+  <!--<div class="row">
+   <pre>{{edtaData | json }}</pre>
+  </div>
+  -->
+
+</div>

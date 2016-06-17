@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+   <h3>Freezers</h3>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-offset-4 col-md-8 ">
+        <form name="datepickerForm" class="form-inline" role="form">
+          <div class="form-group">
+            <label class="control-label">
+              Select Date &nbsp; &nbsp;<i style="font-size: 35px" class="fa fa-calendar" aria-hidden="true"></i>
+            </label>
+            <input type="text" class="form-control" ng-model="freezerData.freezerDate" name="date" bs-datepicker>
+          </div>
+        </form>
+    </div>
+  </div>
+  <br/><br/>
+   <div class="row">
+     <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Box ID</th>
+              <th>Last Cryovial Position</th>
+              <th>Freezer ID</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+           <tr ng-repeat="item in freezerData.data">
+             <td>{{item.boxID}}</td>
+             <td>{{item.location}}</td>
+             <td>{{item.freezerID}}</td>
+             <td>{{item.date}}</td>
+           </tr>
+          </tbody>
+     </table>
+   </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <h3>Cryovial Boxes</h3>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8 ">
+            <form name="datepickerForm" class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="control-label">
+                        Cryovial Box &nbsp; &nbsp;<i style="font-size: 35px" class="fa fa-th" aria-hidden="true"></i>
+                    </label>
+                    <input type="text" class="form-control" ng-model="cryovialBoxData.boxID" name="">
+                </div>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <label class="control-label">
+                        Select Date &nbsp; &nbsp;<i style="font-size: 35px" class="fa fa-calendar" aria-hidden="true"></i>
+                    </label>
+                    <input type="text" class="form-control" ng-model="cryovialBoxData.date" name="date" bs-datepicker>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <br/><br/><br/><br/><br/><br/>
+
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Cryovial Box ID</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in cryovialBoxData.cryovialBoxes">
+                <td><a href="#/cryovialBox/{{item.boxID}}">{{item.boxID}}</a></td>
+                <td>{{item.date}}</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+</div>

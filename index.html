@@ -1,0 +1,50 @@
+<html ng-app="logisticReport">
+
+<head>
+      <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="./libs/angular-strap/bootstrap-additions.css"/>
+      <link rel="stylesheet" href="./libs/font-awesome/font-awesome.min.css"/>
+      <script src="./libs/angular/angular.min.js"></script>
+      <script src="./libs/angular/angular-ui-router.min.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./libs/angular-strap/angular-strap.min.js"></script>
+      <script src="./libs/angular-strap/angular-strap.tpl.min.js"></script>
+</head>
+
+<body>
+
+  <!--  Top Fixed Navigation bar  -->
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar" ></span>
+                <span class="icon-bar" ></span>
+                <span class="icon-bar" ></span>
+             </button>
+             <a href="" class="navbar-brand">Logistic Report</a>
+             <i style="font-size: 35px" class="fa fa-ambulance" ></i>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="#area">Area Coverage</a></li>
+                  <li><a href="#edta">Locate EDTA</a></li>
+                  <li><a href="#transportation">Transportation Boxes</a></li>
+                  <li><a href="#cryovialBoxes">Cryovial Boxes</a></li>
+                  <li><a href="#freezers">Freezers</a></li>
+                  <li><a href="#nailSamples">Nail Samples</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <!--  Complete Top Fixed Navigation bar -->
+
+  <br/><br/><br/><br/>
+
+  <div ui-view></div>
+
+   <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
